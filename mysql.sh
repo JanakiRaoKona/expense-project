@@ -14,7 +14,7 @@ check_root
 dnf install mysql-server -y &>>$LOGFILE
 # VALIDATE $? "Installing MySQL Server"
 
-systemctl enable mysqlddj &>>$LOGFILE
+systemctl enable mysqld &>>$LOGFILE
 # VALIDATE $? "Enabling MySQL Server"
 
 systemctl start mysqlddj &>>$LOGFILE
