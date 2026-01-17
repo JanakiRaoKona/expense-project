@@ -9,6 +9,9 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
+echo "Click Enter Button.."
+read -s my_sql_root_password
+
 VALIDATE(){
    if [ $1 -ne 0 ]
    then

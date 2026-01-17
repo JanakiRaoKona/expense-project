@@ -4,9 +4,6 @@ echo "Click Enter Button.."
 
 check_root
 
-echo "Click Enter Button.."
-read -s my_sql_root_password
-
 source ./comman.sh
 
 dnf install mysql-server -y &>>$LOGFILE
