@@ -1,10 +1,7 @@
 #!/bin/bash
-echo "Click Enter Button.."
-
-
-check_root
 
 source ./comman.sh
+check_root
 
 dnf install mysql-server -y &>>$LOGFILE
 VALIDATE $? "Installing MySQL Server"
