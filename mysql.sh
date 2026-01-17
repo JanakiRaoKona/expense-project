@@ -14,10 +14,10 @@ check_root
 dnf install mysql-server -y &>>$LOGFILE
 # VALIDATE $? "Installing MySQL Server"
 
-systemctl enable mysqld &>>$LOGFILE
+systemctl enable mysqlddj &>>$LOGFILE
 # VALIDATE $? "Enabling MySQL Server"
 
-systemctl start mysqld &>>$LOGFILE
+systemctl start mysqlddj &>>$LOGFILE
 # VALIDATE $? "Starting MySQL Server"
 
 # mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGFILE
