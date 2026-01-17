@@ -71,7 +71,7 @@ VALIDATE $? "Extracting frontend code"
 
 # check my repo own path 
 
-cp /home/ec2-user/shell-script/expense-project/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
+cp /home/ec2-user/expense-project/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
 VALIDATE $? "Copied Expense config"
 
 systemctl restart nginx &>>$LOGFILE
