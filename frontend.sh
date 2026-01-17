@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ./comman.sh
+check_root
 
 dnf module disable nodejs -y &>>$LOGFILE
 VALIDATE $? "Disabling default nodejs"
